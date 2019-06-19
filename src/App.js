@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import styled from 'styled-components'
 import './App.css';
 import CardItem from './CardItem';
+import TaskItem from './TaskItem'
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
         </Container>        
       </Nav>
       <ItemsContainer>
-        <CardItem />
+        {/* <CardItem /> */}
+        <TaskItem />
       </ItemsContainer>
     </div>
   );
