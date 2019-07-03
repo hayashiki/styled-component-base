@@ -33,24 +33,6 @@ const ProgressBar = styled.div`
   background-color: rgba(0, 0, 0, 0.06);
 `
 
-const TaskA = styled.a`
-  height: 20px;
-  width: 20px;
-  min-width: 20px;
-  padding: 0px;
-  border-radius: 3px;
-  margin-right: 7.5px;
-  border: none;
-  display: flex;
-  justify-content: center;
-  background: #eee;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;  
-
-  &:hover {
-    background: #13cb73;
-  }
-`
-
 const ULWrapper = styled.div`
   margin-right: 30px;
   margin-left: 30px;
@@ -60,33 +42,6 @@ const ULWrapper = styled.div`
   max-height: 100%;
   margin: 0 15px;
   padding: 0px;  
-`
-const InputEdit = styled.div`
-  flex-grow: 1;
-  overflow: auto;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  display: flex;
-`
-
-const Input = styled.input`
-  max-width: 75%;
-  color: #505050;
-  font-size: 15px;  
-  display: none;
-  height: 30px;
-  line-height: 20px;
-  /* font-size: 14px;
-  color: #1b2733; */
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  cursor: text;  
 `
 
 const Span = styled.span`

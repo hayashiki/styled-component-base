@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import styled from 'styled-components'
 import './App.css';
-import CardItem from './CardItem';
+// import CardItem from './CardItem';
 import TaskItems from './TaskItems'
 import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
@@ -16,11 +15,13 @@ function App() {
   return (
     <div>
       <GlobalStyle></GlobalStyle>
+
       <Nav>
         <Container>
+
           <LogoSelection>
-            <i className="nav__logo__icon ion-radio-waves" />
-            <LogoText href="/#/songs" title="">SLOWP</LogoText>
+            <LogoIcon />
+            <LogoText href="/#/styles" title="">StylePlayGround</LogoText>
           </LogoSelection>
 
           <SearchSelection>
@@ -41,6 +42,7 @@ function App() {
           </UserSelection>
         </Container>        
       </Nav>
+
       <Wrapper>
         <ItemsWrapper>
           <ItemsContainer>
@@ -169,6 +171,15 @@ const UserWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+`
+
+const LogoIcon = styled.i`
+  color: #fff;
+  font-size: 20px;
+    &::before {
+      font-family: 'Material Icons';
+      content: "wave";    
+    }
 `
 
 const SearchIcon = styled.i`

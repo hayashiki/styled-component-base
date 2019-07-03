@@ -1,13 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const TaskUL = styled.ul`
-  position: relative;
-  z-index: 0;
-  padding: 15px 0 30px 0;
-  min-height: 82px;
-`
-
 const TaskLi = styled.li`
   display: flex;
   flex-direction: column;
@@ -66,16 +59,6 @@ const CheckIcon = styled.i`
     }
 `
 
-const ULWrapper = styled.div`
-  margin-right: 30px;
-  margin-left: 30px;
-  width: 260px;
-  min-width: 260px;
-  height: 100%;
-  max-height: 100%;
-  margin: 0 15px;
-  padding: 0px;  
-`
 const InputEdit = styled.div`
   flex-grow: 1;
   overflow: auto;
